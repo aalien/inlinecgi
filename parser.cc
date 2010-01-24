@@ -38,7 +38,7 @@ bool Parser::parse(std::ostream& stream_out)
                     state = READ;
                 } else
                 {
-                    std::cout << buf;
+                    stream_out << buf;
                 }
                 break;
             }
@@ -55,7 +55,7 @@ bool Parser::parse(std::ostream& stream_out)
             }
             case INTERPRET:
             {
-                std::cout << exec_and_read(to_interp);
+                stream_out << exec_and_read(to_interp);
                 to_interp = "";
                 state = PARSE;
                 break;
