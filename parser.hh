@@ -9,9 +9,10 @@ class Parser
         ~Parser();
 
         bool parse(std::ostream& stream_out);
-        std::string exec_and_read(std::string s);
     
     private:
+        std::string exec_and_read(std::string s);
+
         std::ifstream file_;
         
         // states for parser
