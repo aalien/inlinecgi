@@ -1,0 +1,17 @@
+What?
+    Inlinecgi searches files for <? and ?> tags. Then it cuts the script in
+    between and executes it with /bin/sh.
+
+How?
+    Just ./inlinecgi FILE. There's also a tiny cgi-bin ready script for use in
+    web pages, that will give the http query string (the part after the "?") to
+    the actual inlinecgi binary as a parameter.
+
+Why?
+    Because Fruide (http://cappu.shelli.fi/fruide_ideas.html) seemed like it
+    would take too long to become usable, and I wanted something else than just
+    another scripting language.
+
+Who?
+    See AUTHORS.
+
