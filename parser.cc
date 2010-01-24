@@ -12,7 +12,7 @@ Parser::Parser(std::string filename) : file_()
 
 Parser::~Parser()
 {
-    //
+    file_.close();
 }
 
 bool Parser::parse(std::ostream& stream_out)
